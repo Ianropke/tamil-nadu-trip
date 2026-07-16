@@ -498,6 +498,20 @@ h1, h2, h3, h4 {
 .hotel-info-content strong {
   color: var(--secondary-color);
 }
+.hotel-media {
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 200px;
+  width: 100%;
+  box-shadow: var(--shadow-sm);
+  border: 2px solid white;
+}
+.hotel-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* Destination Media */
 .destination-media {
