@@ -452,6 +452,53 @@ h1, h2, h3, h4 {
   font-weight: 500;
 }
 
+/* Hotel Details Accordion */
+.hotel-details {
+  background: rgba(0, 159, 183, 0.05);
+  border: 1px solid rgba(0, 159, 183, 0.2);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
+}
+.hotel-details summary {
+  font-weight: 700;
+  color: var(--secondary-color);
+  cursor: pointer;
+  padding: 0.5rem 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  outline: none;
+}
+.hotel-details summary::-webkit-details-marker {
+  display: none;
+}
+.hotel-details summary::before {
+  content: '+';
+  margin-right: 0.8rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: 20px;
+  text-align: center;
+}
+.hotel-details[open] summary::before {
+  content: '−';
+}
+.hotel-info-content {
+  padding: 1rem 0;
+  border-top: 1px dashed rgba(0, 159, 183, 0.3);
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  animation: fadeIn 0.3s ease;
+}
+.hotel-info-content p {
+  margin-bottom: 0.5rem;
+}
+.hotel-info-content strong {
+  color: var(--secondary-color);
+}
+
 /* Destination Media */
 .destination-media {
   margin-top: 2rem;
