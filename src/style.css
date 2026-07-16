@@ -118,6 +118,7 @@ p {
 .lang-selector {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 
 .lang-btn {

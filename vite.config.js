@@ -6,6 +6,7 @@ export default defineConfig({
       input: {
         main: 'index.html',
         en: 'en.html',
+        gu: 'gu.html',
       }
     }
   }
