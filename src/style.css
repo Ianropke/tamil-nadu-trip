@@ -415,6 +415,176 @@ p {
   min-width: 30px;
 }
 
+/* History Section ("Historien under rejsen") */
+.history-section {
+  padding: 6rem 0;
+}
+
+.history-intro {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.history-card {
+  background: var(--surface-color);
+  border-radius: var(--border-radius-lg);
+  padding: 2.5rem 2rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.history-card-top h3 {
+  font-size: 1.35rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.3rem;
+  font-family: var(--font-heading);
+}
+
+.history-card-top h4 {
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.history-card-top p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin-bottom: 1.2rem;
+}
+
+.history-card-top ul {
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.history-card-top li {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+  line-height: 1.4;
+}
+
+.history-card .key-phrase {
+  margin-top: auto;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.4;
+}
+
+/* History Timeline inside History Section */
+.history-timeline {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 3rem auto 1rem;
+  max-width: 900px;
+  padding: 1rem 0;
+}
+
+.history-timeline-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 18%;
+  position: relative;
+  z-index: 2;
+}
+
+.history-timeline-dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  border: 4px solid var(--bg-color);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 0.8rem;
+  transition: transform 0.3s;
+}
+
+.history-timeline-step:hover .history-timeline-dot {
+  transform: scale(1.2);
+}
+
+.history-timeline-info h4 {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+}
+
+.history-timeline-info p {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.history-timeline::before {
+  content: '';
+  position: absolute;
+  top: 2.1rem;
+  left: 9%;
+  right: 9%;
+  height: 2px;
+  background: var(--primary-color);
+  opacity: 0.2;
+  z-index: 1;
+}
+
+/* History Context Boxes in Itinerary */
+.history-context-box {
+  background: #fdfcf9;
+  border-left: 4px solid var(--primary-color);
+  padding: 1.2rem;
+  margin: 1.5rem 0;
+  border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.01);
+}
+
+.history-context-box h5 {
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.history-context-box p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.history-context-box .observation-task {
+  margin-top: 0.8rem;
+  padding-top: 0.6rem;
+  border-top: 1px dashed rgba(0, 0, 0, 0.1);
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
 /* Food Section & Smagsrute */
 .food-section {
   padding: 6rem 0;
