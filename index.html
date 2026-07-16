@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eventyr i Tamil Nadu & Sri Lanka</title>
-    <meta name="description" content="Rejseplan for Ian, Laura og William. Tamil Nadu og Sri Lanka 2026." />
+    <title>To uger i Sydindien & Sri Lanka - Ian, Laura & William</title>
+    <meta name="description" content="Personlig rejseportal for Ian, Laura og William. Tamil Nadu og Sri Lanka 2026." />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/style.css">
   </head>
   <body>
@@ -18,22 +18,57 @@
         <div class="logo">Rejsen</div>
         <ul class="nav-links">
           <li><a href="#hero">Start</a></li>
+          <li><a href="#highlights">Højdepunkter</a></li>
+          <li><a href="#route-map">Ruten</a></li>
+          <li><a href="#food">Maden</a></li>
+          <li><a href="#hotels">Hoteller</a></li>
+          <li><a href="#itinerary">Dag for dag</a></li>
           <li><a href="#practical">Praktisk</a></li>
-          <li><a href="#flights">Fly</a></li>
-          <li><a href="#safety">Sikkerhed</a></li>
-          <li><a href="#itinerary">Rejseplan</a></li>
         </ul>
       </div>
+    </nav>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav">
+      <a href="#route-map" class="nav-item">
+        <span class="nav-icon">🗺️</span>
+        <span class="nav-label">Ruten</span>
+      </a>
+      <a href="#food" class="nav-item">
+        <span class="nav-icon">🥘</span>
+        <span class="nav-label">Maden</span>
+      </a>
+      <a href="#hotels" class="nav-item">
+        <span class="nav-icon">🏨</span>
+        <span class="nav-label">Hoteller</span>
+      </a>
+      <a href="#itinerary" class="nav-item">
+        <span class="nav-icon">📅</span>
+        <span class="nav-label">I dag</span>
+      </a>
+      <a href="#practical" class="nav-item">
+        <span class="nav-icon">⚙️</span>
+        <span class="nav-label">Praktisk</span>
+      </a>
     </nav>
 
     <!-- Hero Section -->
     <header id="hero" class="hero">
       <div class="hero-content">
-        <h1 class="animate-up">Monsoon Expedition 2026:<br>Tamil Nadu & Sri Lanka</h1>
-        <p class="subtitle animate-up delay-1">Smaragdsæsonen – Taktisk rejsebriefing for Ian, Laura og William</p>
-        <a href="#itinerary" class="cta-button animate-up delay-2">Se tidslinjen</a>
+        <div class="date-badge animate-up">21. juli – 1. august 2026 · Ian, Laura og William</div>
+        <h1 class="animate-up delay-1">To uger gennem Sydindiens farver, smage og historier</h1>
+        <p class="subtitle animate-up delay-2">Fra Chennais køkkener og Coromandelkystens templer til Chettinads palæer, Madurais aftenritualer og Sri Lankas grønne klippelandskaber.</p>
+        
+        <p class="intro-paragraph animate-up delay-2">
+          Det bliver ikke en ferie, hvor vi bare ser steder gennem en bilrude. We skal lave mad i et privat tamilsk køkken, spise fra bananblade, gå gennem gamle handelskvarterer, bo i både paladser og junglearkitektur og opleve templerne, når de er fulde af lys, musik og ceremonier. Undervejs krydser vi Tamil Nadu fra Chennai til Madurai, før rejsen fortsætter to uger til Sri Lanka.
+        </p>
+
+        <div class="hero-buttons animate-up delay-2">
+          <a href="#itinerary" class="cta-button">Se vores rejse</a>
+          <a href="#food" class="cta-button secondary">Se mad & hoteller</a>
+        </div>
       </div>
-      <div class="hero-graphics">
+      <div class="hero-graphics animate-up delay-1">
         <div class="hero-video-wrapper">
           <video autoplay loop muted playsinline class="hero-video">
             <source src="/Sunrise_over_ocean_Mahabalipuram_1080p_202607160821.mp4" type="video/mp4">
@@ -42,102 +77,373 @@
       </div>
     </header>
 
-    <!-- Practical Section -->
-    <section id="practical" class="practical-section">
+    <!-- Highlights Section ("Det her venter os") -->
+    <section id="highlights" class="highlights-section">
       <div class="container">
-        <h2 class="section-title">Rejseforberedelse & Højdepunkter</h2>
+        <h2 class="section-title">Det kan vi glæde os til</h2>
+        <p class="section-subtitle">Fire elementer der gør vores sommerrejse helt særlig.</p>
+        
         <div class="cards-grid">
-          
-          <div class="glass-card has-bg" style="background-image: url('/Palm_trees_against_blue_sky_202607160813.jpeg');">
+          <div class="glass-card has-bg" style="background-image: url('/South_Indian_Thali_on_banana_202607160813.jpeg');">
             <div class="card-content">
-              <img src="/Tuk-tuk_line_art_icon_2K_202607160816.jpeg" class="card-custom-icon" alt="Tuk-tuk">
-              <h3>Smaragdsæsonen & Klima</h3>
-              <p>Juli og august er Tamil Nadus grønne smaragdsæson. Western Ghats-bjergene skærmer mod den tunge monsunbyge. Forvent 25-35°C med forfriskende eftermiddagsbyger, der renser luften.</p>
+              <h3>Smag Tamil Nadu</h3>
+              <p>Vi går fra bløde idlier og stærke chutneyer til friskgrillet fisk, aromatiske Chettinad-krydderier, sød filterkaffe og Madurais gademad. Flere gange kommer vi selv med ind i køkkenet.</p>
             </div>
           </div>
 
-          <div class="glass-card has-bg" style="background-image: url('/South_Indian_Thali_on_banana_202607160813.jpeg');">
+          <div class="glass-card has-bg" style="background-image: url('/public/Resort_swimming_pool_leading_to_202607160858.mp4');">
+            <!-- Note: CSS handles fallback for video background in cards, or we use cover images -->
             <div class="card-content">
-              <img src="/Dabarah_Tumbler_coffee_set_icon_202607160816.jpeg" class="card-custom-icon" alt="Kaffe">
-              <h3>Sydindisk Mess-Kultur</h3>
-              <p>Oplev den uformelle madkultur i de lokale sydindiske "messes" (som Mylai Karpagambal Mess i Chennai). Kontrasteret med Chettinads rige, krydrede festmåltider serveret på friske bananblade.</p>
+              <h3>Hoteller som en oplevelse</h3>
+              <p>Vi skal bo på klassisk storbyhotel, ved en 175 meter lang pool, i et fransk-kolonialt byhus, i et restaureret Chettiar-palæ og i et Geoffrey Bawa øko-palads bygget ind i Sri Lankas jungle.</p>
             </div>
           </div>
 
           <div class="glass-card has-bg" style="background-image: url('/Gopuram_sculptures_of_Meenakshi_…_202607160813.jpeg');">
             <div class="card-content">
-              <h3>Aadi Masam & Tempelcyklus</h3>
-              <p>Rejsen falder sammen med Aadi-månedens festligheder. Oplev de store tempelceremonier (poojas), Aadi Perukku (vandets fest den 2. august) og de rituelle optog ved templet i Madurai.</p>
+              <h3>Templer, palæer & klipper</h3>
+              <p>Vi følger kysten, møder levende håndværkstraditioner, går gennem Madurais tempelverden, bestiger Sigiriya og ser Sri Lanka vågne fra en fredfyldt klippetop ved solopgang.</p>
             </div>
           </div>
 
-          <div class="glass-card has-bg" style="background-image: url('/Surfboard_resting_against_wave_2K_202607160816.jpeg');">
+          <div class="glass-card has-bg" style="background-image: url('/Palm_trees_against_blue_sky_202607160813.jpeg');">
             <div class="card-content">
-              <h3>Coromandelkysten & ECR</h3>
-              <p>Kørslen langs kysten følger den smukke East Coast Road (ECR). Oplev overgangen fra Chennai til Puducherry med udsigt til saltpander, fiskerlandsbyer, farverige både og hvide sandstrande.</p>
+              <h3>Tid til bare at være der</h3>
+              <p>Rejsen skal ikke være et kapløb. Der bliver plads til pool, kaffe, strand, spontane stop og til at vælge forskellige oplevelser undervejs baseret på dagsformen.</p>
             </div>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- Flight Section -->
-    <section id="flights" class="flights-section">
+    <!-- Route Map Overview -->
+    <section id="route-map" class="route-map-section">
       <div class="container">
-        <h2 class="section-title">Flyrejser</h2>
-        <p class="section-subtitle">Oversigt over jeres flybilletter og referencenumre.</p>
-
-        <div class="flight-cards">
-          <!-- Udrejse -->
-          <div class="flight-card">
-            <div class="flight-header">
-              <span class="flight-route">Udrejse: CPH ✈ MAA</span>
-              <span class="flight-pnr">PNR: 9PSRAV</span>
+        <h2 class="section-title">Rejsen på 20 sekunder</h2>
+        <p class="section-subtitle">Vour rute gennem to lande, seks stop og overgangen fra kyst til jungle.</p>
+        
+        <div class="route-timeline">
+          <div class="route-step">
+            <div class="route-dot">1</div>
+            <div class="route-info">
+              <h4>Chennai</h4>
+              <p>22.–23. juli</p>
+              <span class="route-meta">Storby & Madlavning</span>
             </div>
-            <div class="flight-airline">Etihad Airways</div>
-            <div class="flight-details">
-              <div class="flight-leg">
-                <p><strong>21. jul. 2026</strong> | EY178 | 6 t, 15 m</p>
-                <p>11:10 København (T2) ➔ 19:25 Abu Dhabi (T A)</p>
+          </div>
+          <div class="route-step-line"></div>
+          <div class="route-step">
+            <div class="route-dot">2</div>
+            <div class="route-info">
+              <h4>Mahabalipuram</h4>
+              <p>23.–24. juli</p>
+              <span class="route-meta">Templer & Strand (55 km)</span>
+            </div>
+          </div>
+          <div class="route-step-line"></div>
+          <div class="route-step">
+            <div class="route-dot">3</div>
+            <div class="route-info">
+              <h4>Puducherry</h4>
+              <p>24.–26. juli</p>
+              <span class="route-meta">Fransk koloni & Surf (95 km)</span>
+            </div>
+          </div>
+          <div class="route-step-line"></div>
+          <div class="route-step">
+            <div class="route-dot">4</div>
+            <div class="route-info">
+              <h4>Chettinad</h4>
+              <p>26.–27. juli</p>
+              <span class="route-meta">Mansion & Fliser (250 km)</span>
+            </div>
+          </div>
+          <div class="route-step-line"></div>
+          <div class="route-step">
+            <div class="route-dot">5</div>
+            <div class="route-info">
+              <h4>Madurai</h4>
+              <p>27.–28. juli</p>
+              <span class="route-meta">Tempelby & Gademad (90 km)</span>
+            </div>
+          </div>
+          <div class="route-step-line"></div>
+          <div class="route-step">
+            <div class="route-dot">6</div>
+            <div class="route-info">
+              <h4>Sri Lanka</h4>
+              <p>28. jul. – 1. aug.</p>
+              <span class="route-meta">Klippetoppe & Safari (Fly)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Food Section ("Rejsen, vi også skal spise os igennem") -->
+    <section id="food" class="food-section">
+      <div class="container">
+        <h2 class="section-title">Rejsen vi også skal spise os igennem</h2>
+        <p class="section-subtitle">Sydindien og Sri Lanka har nogle af Asiens mest karakteristiske og krydrede køkkener. Her er vores smagsrute.</p>
+        
+        <div class="food-intro">
+          <p>
+            Kokos, tamarind, sort peber, karryblade og sprøde fermenterede linse-deje er fundamentet. Men smagen ændrer sig dramatisk fra kystens friske fisk til Chettinads intense krydderblandinger og Madurais uformelle street food. Her er de smage, vi ikke må gå glip af.
+          </p>
+        </div>
+
+        <div class="food-grid">
+          <div class="food-card">
+            <div class="food-badge">Chennai</div>
+            <div class="food-card-image" style="background-image: url('/South_Indian_Thali_on_banana_202607160813.jpeg');"></div>
+            <div class="food-card-content">
+              <h3>Ind i det tamilske køkken</h3>
+              <p>Vi starter rejsen med et privat madlavningskursus. Vi kværner chutney på traditionel stenkværn og tilbereder ris- og linsekager (kuzhi paniyaram) i fedtstensgryder.</p>
+              <div class="food-tags">
+                <span class="food-tag-item veg">Vegetarisk</span>
+                <span class="food-tag-item mild">Styrke: Tilpasses</span>
               </div>
-              <div class="flight-leg">
-                <p><strong>21. jul. 2026</strong> | EY340 | 4 t, 20 m</p>
-                <p>21:00 Abu Dhabi (T A) ➔ 02:50 (+1) Chennai (T2)</p>
+              <div class="food-highlight">
+                <strong>Det skal vi smage:</strong> Kuzhi Paniyaram (små sprøde, luftige linseboller).
               </div>
             </div>
           </div>
 
-          <!-- Mellemstrækning -->
-          <div class="flight-card">
-            <div class="flight-header">
-              <span class="flight-route">Mellemstrækning: IXM ✈ CMB</span>
-              <span class="flight-pnr">PNR: FRMAKF</span>
-            </div>
-            <div class="flight-airline">SriLankan Airlines</div>
-            <div class="flight-details">
-              <div class="flight-leg">
-                <p><strong>28. jul. 2026</strong> | Tider ikke oplyst</p>
-                <p>Madurai (IXM) ➔ Colombo (CMB)</p>
+          <div class="food-card">
+            <div class="food-badge">Mahabalipuram</div>
+            <div class="food-card-image" style="background-image: url('/Clay_pot_over_open_fire_202607160816.jpeg');"></div>
+            <div class="food-card-content">
+              <h3>Fisk fra Bengalbugten</h3>
+              <p>Langs kysten handler det om friske fisk. Vi krydrer med peber, chili og lime, og spiser på stranden med sand under tæerne.</p>
+              <div class="food-tags">
+                <span class="food-tag-item fish">Fisk & Skaldyr</span>
+                <span class="food-tag-item medium">Styrke: Moderat</span>
+              </div>
+              <div class="food-highlight">
+                <strong>Det skal vi smage:</strong> Helgrillet pomfret eller krydret seer fish.
               </div>
             </div>
           </div>
 
-          <!-- Hjemrejse -->
-          <div class="flight-card">
-            <div class="flight-header">
-              <span class="flight-route">Hjemrejse: CMB ✈ CPH</span>
-              <span class="flight-pnr">PNR: 9PSRAV</span>
-            </div>
-            <div class="flight-airline">Etihad Airways</div>
-            <div class="flight-details">
-              <div class="flight-leg">
-                <p><strong>1. aug. 2026</strong> | EY397 | 4 t, 30 m</p>
-                <p>21:50 Colombo ➔ 00:50 (+1) Abu Dhabi (T A)</p>
+          <div class="food-card">
+            <div class="food-badge">Puducherry</div>
+            <div class="food-card-image" style="background-image: url('/Yellow_colonial_buildings_Puduch…_2K_202607160810.jpeg');"></div>
+            <div class="food-card-content">
+              <h3>Fransk-kreolsk fusion</h3>
+              <p>Puducherry blander sydindiske krydderier med franske teknikker. Start dagen med surdejsbrød og god kaffe, og slut med en kreolsk fiskecurry på tagterrassen.</p>
+              <div class="food-tags">
+                <span class="food-tag-item hybrid">Fusion</span>
+                <span class="food-tag-item mild">Styrke: Mild</span>
               </div>
-              <div class="flight-leg">
-                <p><strong>2. aug. 2026</strong> | EY177 | 6 t, 45 m</p>
-                <p>02:15 Abu Dhabi (T A) ➔ 07:00 København (T2)</p>
+              <div class="food-highlight">
+                <strong>Det skal vi smage:</strong> Surdejsbrød og økologisk kakao fra Mason & Co.
+              </div>
+            </div>
+          </div>
+
+          <div class="food-card">
+            <div class="food-badge">Chettinad</div>
+            <div class="food-card-image" style="background-image: url('/Athangudi_tiles_in_mansion_2K_202607160810.jpeg');"></div>
+            <div class="food-card-content">
+              <h3>Rejsens mest intense smage</h3>
+              <p>Chettinad-køkkenet er berømt for sin brug af stjerneanis, fennikel, peber og kardemomme. Måltiderne serveres som store festmåltider på bananblade.</p>
+              <div class="food-tags">
+                <span class="food-tag-item meat">Kød & Vegetarisk</span>
+                <span class="food-tag-item hot">Styrke: Intens</span>
+              </div>
+              <div class="food-highlight">
+                <strong>Det skal vi smage:</strong> Krydret Chettinad Chicken Curry på bananblad.
+              </div>
+            </div>
+          </div>
+
+          <div class="food-card">
+            <div class="food-badge">Madurai</div>
+            <div class="food-card-image" style="background-image: url('/Glass_of_Jigarthanda_street_drink_202607160810.jpeg');"></div>
+            <div class="food-card-content">
+              <h3>Basarernes uformelle gademad</h3>
+              <p>Madurai sover aldrig, og det gør byens gademad heller ikke. Vi går efter de berømte lagdelte parotta-brød og den søde mandelmælk-dessert.</p>
+              <div class="food-tags">
+                <span class="food-tag-item street">Gademad</span>
+                <span class="food-tag-item medium">Styrke: Moderat</span>
+              </div>
+              <div class="food-highlight">
+                <strong>Det skal vi smage:</strong> Jigarthanda (kold dessertdrik med is og mandel-gelé).
+              </div>
+            </div>
+          </div>
+
+          <div class="food-card">
+            <div class="food-badge">Sri Lanka</div>
+            <div class="food-card-image" style="background-image: url('/Elephant_eye_wrinkled_skin_textures_202607160813.jpeg');"></div>
+            <div class="food-card-content">
+              <h3>Kamatha og havemad</h3>
+              <p>I Sri Lanka spiser vi mad tilberedt i lergryder over åben ild under stjernerne (Kamatha) og frisk, økologisk havemad tæt på Sigiriya-klippen.</p>
+              <div class="food-tags">
+                <span class="food-tag-item veg">Vegetarisk/Kød</span>
+                <span class="food-tag-item mild">Styrke: Tilpasses</span>
+              </div>
+              <div class="food-highlight">
+                <strong>Det skal vi smage:</strong> Traditionel ris og curry tilberedt over ild.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hotels Section ("Seks steder, vi får lyst til at komme hjem til") -->
+    <section id="hotels" class="hotels-section">
+      <div class="container">
+        <h2 class="section-title">Seks steder vi får lyst til at komme hjem til</h2>
+        <p class="section-subtitle">Vores hoteller er ikke bare overnatning – de er en del af selve rejseoplevelsen.</p>
+
+        <div class="hotels-grid">
+          
+          <div class="hotel-card">
+            <div class="hotel-card-image" style="background-image: url('/Palm_trees_against_blue_sky_202607160813.jpeg');"></div>
+            <div class="hotel-card-content">
+              <span class="hotel-location">Chennai</span>
+              <h3>Taj Coromandel</h3>
+              <p class="hotel-personality">Klassisk 5-stjernet storbykomfort, hvor vi lander roligt efter flyrejsen.</p>
+              <div class="hotel-amenities">
+                <span class="amenity-icon">🏊 25m pool</span>
+                <span class="amenity-icon">💆 Jiva Spa</span>
+                <span class="amenity-icon">🏋️ Fitness</span>
+                <span class="amenity-icon">🍽️ 4 restauranter</span>
+              </div>
+              <div class="hotel-best">
+                <strong>Det bedste ved stedet:</strong> Den uforlignelige service og restitution ved poolen efter flyturen.
+              </div>
+              <div class="hotel-footer-meta">
+                <span>1 overnatning</span>
+                <a href="#itinerary" class="hotel-link">Se program</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hotel-card">
+            <div class="hotel-card-image">
+              <video autoplay loop muted playsinline class="hotel-card-video">
+                <source src="/Resort_swimming_pool_leading_to_202607160858.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="hotel-card-content">
+              <span class="hotel-location">Mahabalipuram</span>
+              <h3>Kaldan Samudhra Palace</h3>
+              <p class="hotel-personality">Et storslået Rajasthani-palads ved stranden med Indiens længste pool.</p>
+              <div class="hotel-amenities">
+                <span class="amenity-icon">🏊 175m pool</span>
+                <span class="amenity-icon">🏖️ Privat strand</span>
+                <span class="amenity-icon">💆 Luksus-spa</span>
+                <span class="amenity-icon">🍽️ Havudsigt dining</span>
+              </div>
+              <div class="hotel-best">
+                <strong>Det bedste ved stedet:</strong> At svømme i den gigantiske pool med udsigt direkte til havet.
+              </div>
+              <div class="hotel-footer-meta">
+                <span>1 overnatning</span>
+                <a href="#itinerary" class="hotel-link">Se program</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hotel-card">
+            <div class="hotel-card-image">
+              <video autoplay loop muted playsinline class="hotel-card-video">
+                <source src="/Swimming_pool_at_hotel_1080p_202607160905.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="hotel-card-content">
+              <span class="hotel-location">Puducherry</span>
+              <h3>Palais De Mahe</h3>
+              <p class="hotel-personality">Kolonial fransk boutique-stemning i hjertet af det gamle White Town.</p>
+              <div class="hotel-amenities">
+                <span class="amenity-icon">🏊 Gårdhavepool</span>
+                <span class="amenity-icon">🍽️ Tagterrasse</span>
+                <span class="amenity-icon">💆 Massage</span>
+                <span class="amenity-icon">📍 Gåafstand til alt</span>
+              </div>
+              <div class="hotel-best">
+                <strong>Det bedste ved stedet:</strong> Den hemmelige, rolige gårdhave og den fantastiske tagterrasse-restaurant.
+              </div>
+              <div class="hotel-footer-meta">
+                <span>2 overnatninger</span>
+                <a href="#itinerary" class="hotel-link">Se program</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hotel-card">
+            <div class="hotel-card-image">
+              <video autoplay loop muted playsinline class="hotel-card-video">
+                <source src="/Swimming_pool_in_Chettiar_mansion_202607160858.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="hotel-card-content">
+              <span class="hotel-location">Chettinad</span>
+              <h3>Visalam</h3>
+              <p class="hotel-personality">En nat i et ægte, 100 år gammelt og smukt restaureret handelspalæ.</p>
+              <div class="hotel-amenities">
+                <span class="amenity-icon">🏊 Pool i haven</span>
+                <span class="amenity-icon">🏛️ Burma-teaktræ</span>
+                <span class="amenity-icon">☕ Poolside café</span>
+                <span class="amenity-icon">🍽️ Familie-opskrifter</span>
+              </div>
+              <div class="hotel-best">
+                <strong>Det bedste ved stedet:</strong> Den historiske palæ-stemning og de utroligt smukke, åbne gårdrum.
+              </div>
+              <div class="hotel-footer-meta">
+                <span>1 overnatning</span>
+                <a href="#itinerary" class="hotel-link">Se program</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hotel-card">
+            <div class="hotel-card-image" style="background-image: url('/Glass_of_Jigarthanda_street_drink_202607160810.jpeg');"></div>
+            <div class="hotel-card-content">
+              <span class="hotel-location">Madurai</span>
+              <h3>Grand Madurai</h3>
+              <p class="hotel-personality">Moderne 4-stjernet komfort og afslapning tæt på det store tempel.</p>
+              <div class="hotel-amenities">
+                <span class="amenity-icon">🏊 Udendørs pool</span>
+                <span class="amenity-icon">🔇 Lydisolering</span>
+                <span class="amenity-icon">💆 Spa-behandlinger</span>
+                <span class="amenity-icon">🍽️ Bazaar Buffet</span>
+              </div>
+              <div class="hotel-best">
+                <strong>Det bedste ved stedet:</strong> Den rolige pool og de komfortable, lydisolerede værelser efter en lang dag i tempelbyen.
+              </div>
+              <div class="hotel-footer-meta">
+                <span>1 overnatning</span>
+                <a href="#itinerary" class="hotel-link">Se program</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hotel-card">
+            <div class="hotel-card-image">
+              <video autoplay loop muted playsinline class="hotel-card-video">
+                <source src="/Hotel_on_forest_cliffside_1080p_202607160900.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="hotel-card-content">
+              <span class="hotel-location">Sri Lanka</span>
+              <h3>Heritance Kandalama</h3>
+              <p class="hotel-personality">Geoffrey Bawas øko-mesterværk bygget direkte ind i junglens klippeside.</p>
+              <div class="hotel-amenities">
+                <span class="amenity-icon">🏊 3 pools</span>
+                <span class="amenity-icon">🌅 Udsigt over søen</span>
+                <span class="amenity-icon">🐒 Vildt dyreliv</span>
+                <span class="amenity-icon">💆 Luksus-spa</span>
+              </div>
+              <div class="hotel-best">
+                <strong>Det bedste ved stedet:</strong> Den ikoniske Kachchan infinity-pool, der smelter sammen med søen og naturen.
+              </div>
+              <div class="hotel-footer-meta">
+                <span>4 overnatninger</span>
+                <a href="#itinerary" class="hotel-link">Se program</a>
               </div>
             </div>
           </div>
@@ -146,8 +452,514 @@
       </div>
     </section>
 
-    <!-- Safety & Hygiene Section -->
-    <section id="safety" class="safety-section">
+    <!-- Itinerary Section ("Dag for dag") -->
+    <section id="itinerary" class="itinerary-section">
+      <div class="container">
+        <h2 class="section-title">Dag for dag</h2>
+        <p class="section-subtitle">Vores rejseplan. Vælg jeres foretrukne oplevelse for hver dag undervejs.</p>
+        
+        <div class="timeline">
+          
+          <!-- CHENNAI -->
+          <div class="destination-block">
+            <div class="destination-header">
+              <div class="destination-top">
+                <div class="dates">22.–23. juli</div>
+                <h2>Chennai</h2>
+                <span class="destination-subtitle-mini">Første møde med Tamil Nadu</span>
+              </div>
+
+              <div class="destination-hero-media">
+                <img src="/Silk_weaving_at_Kalakshetra_Foun…_202607160810.jpeg" alt="Mylapore og vævning i Chennai">
+              </div>
+
+              <p class="destination-intro">
+                Efter landingen tager vi det roligt og vænner os til det varme sydindiske klima. Vores første aften går vi direkte ind i et privat tamilsk hjem for at lave autentisk mad sammen.
+              </p>
+
+              <div class="day-highlights">
+                <h4>Dagens tre højdepunkter</h4>
+                <ul>
+                  <li>Mylapores gamle gader, farverige templer og frisk filterkaffe.</li>
+                  <li>Mødet med traditionelle silkevævere hos Kalakshetra Foundation.</li>
+                  <li>Privat madlavningskursus i et traditionelt tamilsk brahmin-køkken.</li>
+                </ul>
+              </div>
+
+              <div class="booked-program">
+                <h4>Det faste program (Booket)</h4>
+                <div class="booked-item">
+                  <span class="booked-time">Kl. 18:00</span>
+                  <div class="booked-details-info">
+                    <strong>Privat madlavningskursus & Middag hos Gayathri Jaishankar</strong>
+                    <p>Vi lærer at lave sydindisk mad med traditionelle lerkrukker og fedtstensredskaber (kal chatti). Serveres på bananblade.</p>
+                    <details class="booking-details">
+                      <summary>🥘 Se bookingoplysninger & adresse</summary>
+                      <div class="booking-content">
+                        <p><strong>Status:</strong> Confirmed and Paid</p>
+                        <p><strong>Vært:</strong> Gayathri Jaishankar (Tlf: +91 98400 28696)</p>
+                        <p><strong>Sted:</strong> B1, Sri Poornavalli Flats, Kamarajar Salai, Ramapuram</p>
+                        <p><strong>Menu:</strong> Tilpasset "somewhat spicy" til Laura. Sambhar, poriyal, kuzhi paniyaram med kaara chutney, papad og filterkaffe.</p>
+                      </div>
+                    </details>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tracks">
+              <div class="track-selector">
+                <button class="track-btn active" data-dest="chennai" data-track="1">Kultur & Håndværk</button>
+                <button class="track-btn" data-dest="chennai" data-track="2">Mad, Byliv & Afslapning</button>
+              </div>
+              
+              <div class="track-content active" id="chennai-track-1">
+                <div class="track-meta">
+                  <span class="track-meta-item"><strong>Tempo:</strong> Moderat</span>
+                  <span class="track-meta-item"><strong>Mest for dig, hvis:</strong> Du elsker historie, templer og vævekunst.</span>
+                  <span class="track-meta-item"><strong>Beslutning:</strong> Kan vælges på dagen</span>
+                </div>
+                <ul>
+                  <li><strong>Formiddag:</strong> Gåtur i Mylapore-kvarteret til Parthasarathy-templet og Mylapore Tank. Filterkaffe på Mylai Karpagambal Mess. Besøg hos Kalakshetra Foundation for at se silkesaris blive vævet.</li>
+                  <li><strong>Eftermiddag:</strong> Georgetown Heritage Walk – historiske handelsruter og Georgetowns koloniarkitektur.</li>
+                </ul>
+              </div>
+              
+              <div class="track-content" id="chennai-track-2">
+                <div class="track-meta">
+                  <span class="track-meta-item"><strong>Tempo:</strong> Roligt</span>
+                  <span class="track-meta-item"><strong>Mest for dig, hvis:</strong> Du vil smage byens bedste gadekøkkener og se det kreative Chennai.</span>
+                  <span class="track-meta-item"><strong>Beslutning:</strong> Kan vælges på dagen</span>
+                </div>
+                <ul>
+                  <li><strong>Formiddag:</strong> Autentisk morgenmad på Rayar's Mess (traditionelle idlis), efterfulgt af besøg i kunstnerkolonien Cholamandal Artists' Village.</li>
+                  <li><strong>Eftermiddag:</strong> Gåtur på Marina Beach og besøg ved Vivekananda House. Sukkerrørsjuice og kaffestop på den frodige Café Amethyst.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="compact-hotel-card">
+              <span>Overnatning i aften:</span>
+              <strong>Taj Coromandel (5-stjernet luksus)</strong>
+              <p>25m lagunepool, Jiva Spa og Southern Spice restaurant.</p>
+              <a href="#hotels" class="hotel-shortcut-link">Se hotel-detaljer ➔</a>
+            </div>
+          </div>
+  
+          <div class="transport-info">🚗 Næste etape: Ca. 1,5 - 2 timer (55 km) langs kystvejen (ECR) til Mahabalipuram</div>
+
+          <!-- MAHABALIPURAM -->
+          <div class="destination-block">
+            <div class="destination-header">
+              <div class="destination-top">
+                <div class="dates">23.–24. juli</div>
+                <h2>Mahabalipuram</h2>
+                <span class="destination-subtitle-mini">Monolittempler & Kystvibe</span>
+              </div>
+
+              <div class="destination-hero-media">
+                <img src="/Shore_Temple_Mahabalipuram_morni…_2K_202607160810.jpeg" alt="Shore Temple i Mahabalipuram">
+              </div>
+
+              <p class="destination-intro">
+                Vi ankommer til den lille kystby Mahabalipuram, der er berømt for sine oldgamle klippetempler, stenhuggere og afslappede strandstemning.
+              </p>
+
+              <div class="day-highlights">
+                <h4>Dagens tre højdepunkter</h4>
+                <ul>
+                  <li>De dramatiske klippetempler Five Rathas og Shore Temple helt ude ved havet.</li>
+                  <li>Privat madlavningskursus med friske skaldyr direkte på stranden.</li>
+                  <li>Afslapning og badning i resortets spektakulære 175 meter lange pool.</li>
+                </ul>
+              </div>
+
+              <div class="booked-program">
+                <h4>Det faste program (Booket)</h4>
+                <div class="booked-item">
+                  <span class="booked-time">Kl. 19:00</span>
+                  <div class="booked-details-info">
+                    <strong>Privat seafood cooking class på stranden</strong>
+                    <p>Vi tilbereder friske, lokale fisk og skaldyr med sydindiske krydderier og spiser ved vandet på Kaldan Samudhra.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tracks">
+              <div class="track-selector">
+                <button class="track-btn active" data-dest="maha" data-track="1">Monumenter & Kystkultur</button>
+                <button class="track-btn" data-dest="maha" data-track="2">Solopgang, Surf & Stenhuggere</button>
+              </div>
+              
+              <div class="track-content active" id="maha-track-1">
+                <div class="track-meta">
+                  <span class="track-meta-item"><strong>Tempo:</strong> Moderat</span>
+                  <span class="track-meta-item"><strong>Mest for dig, hvis:</strong> Du vil se de UNESCO-beskyttede klippetempler og historie.</span>
+                  <span class="track-meta-item"><strong>Beslutning:</strong> Kan vælges på dagen</span>
+                </div>
+                <ul>
+                  <li><strong>En-route:</strong> Stop ved DakshinaChitra Heritage Museum (historiske huse, folkedans og levende håndværk).</li>
+                  <li><strong>Eftermiddag:</strong> Arjuna's Penance, Five Rathas og det ikoniske Shore Temple med vores faste guide.</li>
+                  <li><strong>Aftensmad:</strong> Frisk fisk på det hyggelige, lokale spisested Moonrakers.</li>
+                </ul>
+              </div>
+              
+              <div class="track-content" id="maha-track-2">
+                <div class="track-meta">
+                  <span class="track-meta-item"><strong>Tempo:</strong> Aktivt</span>
+                  <span class="track-meta-item"><strong>Mest for dig, hvis:</strong> Du vil have sand under tæerne, prøve at surfe og møde stenhuggere.</span>
+                  <span class="track-meta-item"><strong>Beslutning:</strong> Surf skal bookes dagen før</span>
+                </div>
+                <ul>
+                  <li><strong>Morgen (06:00):</strong> Det lokale fiskemarked ved havnen og Shore Temple i det bløde morgenlys.</li>
+                  <li><strong>Formiddag:</strong> Surflektion hos Mumu Surf School på stranden. Besøg hos de fascinerende lokale stenhuggerværksteder.</li>
+                  <li><strong>Frokost:</strong> Friskfanget fisk på Gecko Café.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="compact-hotel-card">
+              <span>Overnatning i aften:</span>
+              <strong>Kaldan Samudhra Palace (5-stjernet resort)</strong>
+              <p>Indiens længste pool (175m) direkte ved stranden.</p>
+              <a href="#hotels" class="hotel-shortcut-link">Se hotel-detaljer ➔</a>
+            </div>
+          </div>
+ 
+          <div class="transport-info">🚗 Næste etape: Ca. 2 timer (95 km) sydpå langs kystvejen (ECR) til Puducherry</div>
+
+          <!-- PUDUCHERRY -->
+          <div class="destination-block">
+            <div class="destination-header">
+              <div class="destination-top">
+                <div class="dates">24.–26. juli</div>
+                <h2>Puducherry</h2>
+                <span class="destination-subtitle-mini">Fransk charme & Surf-vibes</span>
+              </div>
+
+              <div class="destination-hero-media">
+                <img src="/Yellow_colonial_buildings_Puduch…_2K_202607160810.jpeg" alt="Franske huse i Puducherry">
+              </div>
+
+              <p class="destination-intro">
+                Vi ankommer til den tidligere franske koloni Puducherry, hvor gaderne er sennepsgule, skiltene er på fransk, og tempoet er dejligt tilbagelænet.
+              </p>
+
+              <div class="day-highlights">
+                <h4>Dagens tre højdepunkter</h4>
+                <ul>
+                  <li>Spadsere gennem det idylliske franske kvarter (White Town) med bougainvillea.</li>
+                  <li>Fuglesafari og bådtur på den fredfyldte Osudu Lake med lokal guide.</li>
+                  <li>Den fantastiske pool i gården på vores fransk-koloniale boutiquehotel.</li>
+                </ul>
+              </div>
+
+              <div class="booked-program">
+                <h4>Det faste program (Booket)</h4>
+                <div class="booked-item">
+                  <span class="booked-time">Hver formiddag</span>
+                  <div class="booked-details-info">
+                    <strong>Surdejsbrød og god kaffe på kaffebaren Bread & Chocolate</strong>
+                    <p>En perfekt start på dagen med byens bedste kaffe og nybagt bagværk.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tracks">
+              <div class="track-selector">
+                <button class="track-btn active" data-dest="pondi" data-track="1">Fransk-kreolsk Historie</button>
+                <button class="track-btn" data-dest="pondi" data-track="2">Auroville, Surf & Kakao</button>
+              </div>
+              
+              <div class="track-content active" id="pondi-track-1">
+                <div class="track-meta">
+                  <span class="track-meta-item"><strong>Tempo:</strong> Roligt</span>
+                  <span class="track-meta-item"><strong>Mest for dig, hvis:</strong> Du vil opleve arkitektur, spise kreolsk mad og se historisk kampsport.</span>
+                  <span class="track-meta-item"><strong>Beslutning:</strong> Kan vælges på dagen</span>
+                </div>
+                <ul>
+                  <li><strong>Formiddag (Dag 1):</strong> Gåtur i White Towns rolige gader og det tamilske kvarter med historisk guide.</li>
+                  <li><strong>Eftermiddag (Dag 2):</strong> Kreolsk madlavningskursus hos Sita Cultural Centre. Oplev en demonstration af Silambam (traditionel kampsport med stave).</li>
+                  <li><strong>Aftensmad:</strong> Drinks på tagterrassen på Maison Perumal efterfulgt af thali på Surguru.</li>
+                </ul>
+              </div>
+              
+              <div class="track-content" id="pondi-track-2">
+                <div class="track-meta">
+                  <span class="track-meta-item"><strong>Tempo:</strong> Moderat</span>
+                  <span class="track-meta-item"><strong>Mest for dig, hvis:</strong> Du vil opleve Auroville, surfe og se fugleliv.</span>
+                  <span class="track-meta-item"><strong>Beslutning:</strong> Bådtur og surf skal bookes 1 dag før</span>
+                </div>
+                <ul>
+                  <li><strong>Formiddag:</strong> Besøg i det alternative samfund Auroville, kig forbi SVARAM (instrumentbyggeri) og smag chokolade hos Mason & Co.</li>
+                  <li><strong>Eftermiddag:</strong> Bådtur og fugleobservationer ved Osudu Lake med lokal naturguide. Surf-lektion på Serenity Beach.</li>
+                  <li><strong>Aftensmad:</strong> Moderne fransk-indisk mad i den smukke gårdhave på Villa Shanti.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="compact-hotel-card">
+              <span>Overnatning i aften:</span>
+              <strong>Palais De Mahe (Boutique Luksus)</strong>
+              <p>Fransk koloni-stil med pool i gården midt i det franske kvarter.</p>
+              <a href="#hotels" class="hotel-shortcut-link">Se hotel-detaljer ➔</a>
+            </div>
+          </div>
+ 
+          <div class="transport-info">🚗 Næste etape: Ca. 4,5 - 5 timer (250 km) ind i landet mod Sydindiens hjerte, Chettinad</div>
+
+          <!-- CHETTINAD -->
+          <div class="destination-block">
+            <div class="destination-header">
+              <div class="destination-top">
+                <div class="dates">26.–27. juli</div>
+                <h2>Chettinad</h2>
+                <span class="destination-subtitle-mini">Handelspalæer & Flisestøbning</span>
+              </div>
+
+              <div class="destination-hero-media">
+                <img src="/Athangudi_tiles_in_mansion_2K_202607160810.jpeg" alt="Chettinad-fliser og palæer">
+              </div>
+
+              <p class="destination-intro">
+                Vi rejser ind i Chettinad – en region berømt for sine gigantiske, historiske handelspalæer bygget med Burma-teaktræ og spansk marmor, samt sit krydrede køkken.
+              </p>
+
+              <div class="day-highlights">
+                <h4>Dagens tre højdepunkter</h4>
+                <ul>
+                  <li>Udforske de labyrintiske gader i Kanadukathan og besøge et historisk palads.</li>
+                  <li>Se de berømte farverige Athangudi-gulvfliser blive støbt i hånden.</li>
+                  <li>En overnatning i et smukt restaureret Chettiar-hjem med pool.</li>
+                </ul>
+              </div>
+
+              <div class="booked-program">
+                <h4>Det faste program (Booket)</h4>
+                <div class="booked-item">
+                  <span class="booked-time">Frokost/Aften</span>
+                  <div class="booked-details-info">
+                    <strong>Det store bananblads-måltid på The Bangala</strong>
+                    <p>Vi spiser regionens mest krydrede og komplekse retter serveret på bananblade på Chettinads mest berømte spisested.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tracks">
+              <div class="track-selector">
+                <button class="track-btn active" data-dest="chettinad" data-track="1">Fliser, Marked & Køkken</button>
+                <button class="track-btn" data-dest="chettinad" data-track="2">Palæer & Cykelrute</button>
+              </div>
+              
+              <div class="track-content active" id="chettinad-track-1">
+                <div class="track-meta">
+                  <span class="track-meta-item"><strong>Tempo:</strong> Moderat</span>
+                  <span class="track-meta-item"><strong>Mest for dig, hvis:</strong> Du vil se lokalt håndværk og smage traditionel mad.</span>
+                  <span class="track-meta-item"><strong>Beslutning:</strong> Kan vælges på dagen</span>
+                </div>
+                <ul>
+                  <li><strong>Morgen:</strong> Besøg på det stemningsfulde rå marked i Karaikudi (duft til krydderierne).</li>
+                  <li><strong>Formiddag:</strong> Besøg på et Athangudi-fliseværksted for at se flisestøbning.</li>
+                  <li><strong>Eftermiddag:</strong> Traditionelt Chettinad-madlavningskursus på hotellet.</li>
+                </ul>
+              </div>
+              
+              <div class="track-content" id="chettinad-track-2">
+                <div class="track-meta">
+                  <span class="track-meta-item"><strong>Tempo:</strong> Aktivt</span>
+                  <span class="track-meta-item"><strong>Mest for dig, hvis:</strong> Du vil cykle og udforske store tomme palæer.</span>
+                  <span class="track-meta-item"><strong>Beslutning:</strong> Kan vælges på dagen</span>
+                </div>
+                <ul>
+                  <li><strong>Formiddag:</strong> Cykeltur gennem Kanadukathans gader. Besøg i det gigantiske MSMM House (privat adgang).</li>
+                  <li><strong>Eftermiddag:</strong> Se traditionel bomuldsvævning (Kandangi-saris) og gå på opdagelse i antikvitetsgaden i Karaikudi.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="compact-hotel-card">
+              <span>Overnatning i aften:</span>
+              <strong>Visalam (Historisk Palæ-hotel)</strong>
+              <p>Nænsomt restaureret Chettiar-mansion med pool i gårdhaven.</p>
+              <a href="#hotels" class="hotel-shortcut-link">Se hotel-detaljer ➔</a>
+            </div>
+          </div>
+ 
+          <div class="transport-info">🚗 Næste etape: Ca. 2 timer (90 km) vestpå til den hellige tempelby Madurai</div>
+
+          <!-- MADURAI -->
+          <div class="destination-block">
+            <div class="destination-header">
+              <div class="destination-top">
+                <div class="dates">27.–28. juli</div>
+                <h2>Madurai</h2>
+                <span class="destination-subtitle-mini">Sydindiens åndelige hjerte</span>
+              </div>
+
+              <div class="destination-hero-media">
+                <video autoplay loop muted playsinline>
+                  <source src="/Street_food_vendor_pouring_coffee_202607160824.mp4" type="video/mp4">
+                </video>
+              </div>
+
+              <p class="destination-intro">
+                Vi ankommer to Madurai, en af verdens ældste konstant beboede byer, centreret omkring det gigantiske og farverige Meenakshi Amman-tempel.
+              </p>
+
+              <div class="day-highlights">
+                <h4>Dagens tre højdepunkter</h4>
+                <ul>
+                  <li>Det storslåede aftenritual (Palliyarai Pooja) i templet efter mørkets frembrud.</li>
+                  <li>Gademadstour i basarerne med sprøde parottas og den søde Jigarthanda-drik.</li>
+                  <li>Opleve det livlige banan- og blomstermarked i de tidlige morgentimer.</li>
+                </ul>
+              </div>
+
+              <div class="booked-program">
+                <h4>Det faste program (Booket)</h4>
+                <div class="booked-item">
+                  <span class="booked-time">Kl. 21:00</span>
+                  <div class="booked-details-info">
+                    <strong>Aftenritual i Meenakshi Amman-templet</strong>
+                    <p>Når mørket falder på, går vi ind i templets farverige labyrint og oplever ceremonien, hvor guden Shiva bæres til sin gemalinde Parvatis kammer ledsaget af musik, lys og røgelse.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tracks">
+              <div class="track-selector">
+                <button class="track-btn active" data-dest="madurai" data-track="1">Gademad & Basarer</button>
+                <button class="track-btn" data-dest="madurai" data-track="2">Kolam-workshop & Historie</button>
+              </div>
+              
+              <div class="track-content active" id="madurai-track-1">
+                <div class="track-meta">
+                  <span class="track-meta-item"><strong>Tempo:</strong> Intensivt / Spændende</span>
+                  <span class="track-meta-item"><strong>Mest for dig, hvis:</strong> Du vil smage byens bedste gademad og mærke basarens puls.</span>
+                  <span class="track-meta-item"><strong>Beslutning:</strong> Kan vælges på dagen</span>
+                </div>
+                <ul>
+                  <li><strong>Formiddag:</strong> Det livlige banan- og blomstermarked. Kaffestop for at se filterkaffe blive hældt fra højden.</li>
+                  <li><strong>Frokost:</strong> Klassisk Kanchipuram-idli serveret i blade på legendariske Lakshmi Bhavan.</li>
+                  <li><strong>Eftermiddag:</strong> Gademadstour: Smag Bun Parotta og den kolde mandelmælksdrik Jigarthanda, efterfulgt af middag på Amma Mess (Kari Dosa).</li>
+                </ul>
+              </div>
+              
+              <div class="track-content" id="madurai-track-2">
+                <div class="track-meta">
+                  <span class="track-meta-item"><strong>Tempo:</strong> Roligt</span>
+                  <span class="track-meta-item"><strong>Mest for dig, hvis:</strong> Du vil være kreativ og se historiske udstillinger.</span>
+                  <span class="track-meta-item"><strong>Beslutning:</strong> Workshop skal bookes 1 dag før</span>
+                </div>
+                <ul>
+                  <li><strong>Formiddag:</strong> Kolam-workshop (lær at tegne de traditionelle geometriske mønstre med rismel). Besøg hos de lokale kobbersmede.</li>
+                  <li><strong>Eftermiddag:</strong> Besøg på det nye og moderne Keezhadi Museum for at se fund fra oldtidens tamilske civilisation.</li>
+                  <li><strong>Aftensmad:</strong> Mutton Chukka på den legendariske non-veg institution Chandran Mess.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="compact-hotel-card">
+              <span>Overnatning i aften:</span>
+              <strong>Grand Madurai (4-stjernet komfort)</strong>
+              <p>Moderne værelser, pool og god placering tæt på templet.</p>
+              <a href="#hotels" class="hotel-shortcut-link">Se hotel-detaljer ➔</a>
+            </div>
+          </div>
+ 
+          <div class="transport-info">✈️ Næste etape: Formiddagsfly Madurai (IXM) ➔ Colombo (CMB) med SriLankan Airlines (Flyvetid: 55 min)</div>
+
+          <!-- SRI LANKA -->
+          <div class="destination-block">
+            <div class="destination-header">
+              <div class="destination-top">
+                <div class="dates">28. juli – 1. august</div>
+                <h2>Sri Lanka</h2>
+                <span class="destination-subtitle-mini">Sigiriya, Safari & Geoffrey Bawa</span>
+              </div>
+
+              <div class="destination-hero-media">
+                <video autoplay loop muted playsinline>
+                  <source src="/Elephant_walking_through_jungle_…_2K_202607160825.mp4" type="video/mp4">
+                </video>
+              </div>
+
+              <p class="destination-intro">
+                Vi flyver til Sri Lanka og kører ind i det kulturelle triangel. Her bor vi på et arkitektonisk mesterværk bygget direkte ind i en skovklædt klippeside over en rolig sø.
+              </p>
+
+              <div class="day-highlights">
+                <h4>Dagens tre højdepunkter</h4>
+                <ul>
+                  <li>Bestige Pidurangala Rock i de tidlige morgentimer for at se solen stå op over Sigiriya.</li>
+                  <li>Køre i firehjulstrækker på safari i Minneriya for at opleve vilde elefanter.</li>
+                  <li>Nyde de 3 pools og det vilde dyreliv (aber, fugle) på vores ikoniske junglehotel.</li>
+                </ul>
+              </div>
+
+              <div class="booked-program">
+                <h4>Det faste program (Booket)</h4>
+                <div class="booked-item">
+                  <span class="booked-time">Aften</span>
+                  <div class="booked-details-info">
+                    <strong>Kamatha Dining under stjernerne</strong>
+                    <p>Traditionel srilankansk middag tilberedt i lergryder over åben ild midt i en rismark. Ledsages af Ranawara urtete.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tracks">
+              <div class="track-selector">
+                <button class="track-btn active" data-dest="lanka" data-track="1">Klippetoppe & Safari</button>
+                <button class="track-btn" data-dest="lanka" data-track="2">Ruiner & Økologisk Havemad</button>
+              </div>
+              
+              <div class="track-content active" id="lanka-track-1">
+                <div class="track-meta">
+                  <span class="track-meta-item"><strong>Tempo:</strong> Moderat / Tidlig start</span>
+                  <span class="track-meta-item"><strong>Mest for dig, hvis:</strong> Du vil se storslået natur ved solopgang og opleve elefanter.</span>
+                  <span class="track-meta-item"><strong>Beslutning:</strong> Safari skal bookes dagen før</span>
+                </div>
+                <ul>
+                  <li><strong>Morgen (05:00):</strong> Bestig Pidurangala Rock i lommelygternes skær før solopgang. Drik kaffe på toppen. Besøg Popham's Arboretum.</li>
+                  <li><strong>Formiddag:</strong> Besøg på det gigantiske grøntsagsmarked Rangiri Dambulla Economic Centre.</li>
+                  <li><strong>Eftermiddag:</strong> Elefantsafari i firehjulstrækker i Minneriya eller Kaudulla National Park.</li>
+                </ul>
+              </div>
+              
+              <div class="track-content" id="lanka-track-2">
+                <div class="track-meta">
+                  <span class="track-meta-item"><strong>Tempo:</strong> Aktivt</span>
+                  <span class="track-meta-item"><strong>Mest for dig, hvis:</strong> Du vil bestige ruin-fæstningen og cykle gennem oldtidsbyen.</span>
+                  <span class="track-meta-item"><strong>Beslutning:</strong> Kan vælges på dagen</span>
+                </div>
+                <ul>
+                  <li><strong>Morgen:</strong> Bestig Sigiriya Rock Fortress (Løveklippen) før formiddagsvarmen sætter ind.</li>
+                  <li><strong>Formiddag:</strong> Lej cykler og kør rundt blandt ruiner, templer og store træer i den gamle kongeby Polonnaruwa.</li>
+                  <li><strong>Frokost:</strong> Frisk, økologisk have-curry på Jaga Food ved rismarkerne.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="compact-hotel-card">
+              <span>Overnatning i aften:</span>
+              <strong>Heritance Kandalama (5-stjernet øko-luksus)</strong>
+              <p>Junglearkitektur bygget ind i klippesiden med 3 pools.</p>
+              <a href="#hotels" class="hotel-shortcut-link">Se hotel-detaljer ➔</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Practical & Administrative Section -->
+    <section id="practical" class="practical-section-admin">
       <div class="container">
         <h2 class="section-title">Praktiske Råd & Sundhed</h2>
         <p class="section-subtitle">Gode råd til at passe på helbredet og få en behagelig ferie.</p>
@@ -174,345 +986,43 @@
             <p class="safety-warning">⚠️ <strong>Spisetider:</strong> Kom tidligt til populære frokoststeder (som f.eks. The Bangala i Chettinad) for at sikre jer et bord og undgå den værste myldretid midt på dagen.</p>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Itinerary Section -->
-    <section id="itinerary" class="itinerary-section">
-      <div class="container">
-        <h2 class="section-title">Rejseplanen</h2>
-        <p class="section-subtitle">Vælg mellem to unikke spor på de enkelte destinationer.</p>
-        
-        <div class="timeline">
-          
-          <!-- CHENNAI -->
-          <div class="destination-block">
-            <div class="destination-header">
-              <div class="dates">22.–23. juli</div>
-              <h3>Chennai <span class="hotel-tag">Taj Coromandel</span></h3>
-              <p class="common-info"><strong>Fælles:</strong> Ankomst kl. 02:50. Restitution og formiddagsro. Aften: Privat vegetarisk madlavningskursus (Tamil Brahmin) hos Gayathri Jaishankar i Ramapuram. Lær om medicinske urter og kværn chutney på en traditionel stenkværn.</p>
+        <!-- Collapsible Private Booking Details (PNR codes etc) -->
+        <div class="private-panel">
+          <details class="private-details">
+            <summary>🔒 Vis flybilletter, referencer & bookinger (Privat område)</summary>
+            <div class="private-content">
               
-              <details class="hotel-details">
-                <summary>🏨 Hotel-info: Taj Coromandel (5★)</summary>
-                <div class="hotel-info-content">
-                  <p><strong>Beliggenhed:</strong> Placeret i Nungambakkam – det eksklusive hjerte af Chennai.</p>
-                  <p><strong>Luksus & Atmosfære:</strong> Et legendarisk 5-stjernet luksushotel med klassisk sydindisk elegance kombineret med moderne faciliteter. Personlig butler-service tilgængelig.</p>
-                  <p><strong>Faciliteter:</strong> Stor 25-meters udendørs swimmingpool (lagunestil), det prisvindende <em>J Wellness Circle Spa</em>, dampbad, sauna og et fuldt udstyret fitnesscenter.</p>
-                  <p><strong>Gastronomi:</strong> Huser den berømte sydindiske restaurant <em>Southern Spice</em>, den kinesiske <em>Golden Dragon</em> samt baren <em>Chipstead</em>.</p>
+              <h3>Flyrejser & Billetter</h3>
+              <div class="flight-cards-admin">
+                <!-- Udrejse -->
+                <div class="flight-card-admin-item">
+                  <div class="flight-route-admin">Udrejse: CPH ➔ Abu Dhabi (AUH) ➔ Chennai (MAA)</div>
+                  <p><strong>Dato:</strong> 21. jul. 2026 | <strong>PNR:</strong> 9PSRAV | <strong>Selskab:</strong> Etihad Airways</p>
+                  <p>EY178 (11:10 CPH ➔ 19:25 AUH) | EY340 (21:00 AUH ➔ 02:50 MAA +1 dag)</p>
                 </div>
-              </details>
-              
-              <details class="booking-details">
-                <summary>🥘 Booking Detaljer: Madlavningskursus & Middag</summary>
-                <div class="booking-content">
-                  <p><strong>Status:</strong> Confirmed and Paid (3 Gæster)</p>
-                  <p><strong>Vært:</strong> Gayathri Jaishankar (Tlf: +91 98400 28696, gayathri.jaishankar@gmail.com)</p>
-                  <p><strong>Tid:</strong> Onsdag 22. juli 2026, kl. 18:00 (Varighed: 2-3 timer)</p>
-                  <p><strong>Sted:</strong> B1, Sri Poornavalli Flats, Kamarajar Salai, Ramapuram (<a href="https://goo.gl/maps/Cjb4kQrWQ6Q4tQNQ9" target="_blank" rel="noopener noreferrer">Se på Google Maps</a>)</p>
-                  
-                  <h4>Oplevelsen</h4>
-                  <p>En privat 1,5-times hands-on "Cooking Experience" i et autentisk Tamil Brahmin køkken. I skal lære at tilberede traditionelle vegetariske retter med medicinske urter ved hjælp af historiske redskaber som kal chatti (fedtsten) og eeya chombu (tinlegering). Måltidet nydes på traditionel vis, siddende på gulvet med bananblade.</p>
-                  <p><strong>Menu:</strong> Tilpasset "Somewhat Spicy" (af hensyn til Laura). Menuen står på sambhar, poriyal, kuzhi paniyaram med kaara chutney, ris, hjemmelavet curd, pickle, papad og afslutningsvis ægte sydindisk filterkaffe.</p>
+                <!-- Mellemrejse -->
+                <div class="flight-card-admin-item">
+                  <div class="flight-route-admin">Mellemrejse: Madurai (IXM) ➔ Colombo (CMB)</div>
+                  <p><strong>Dato:</strong> 28. jul. 2026 | <strong>PNR:</strong> FRMAKF | <strong>Selskab:</strong> SriLankan Airlines</p>
+                  <p>UL 184 (15:30 Madurai ➔ 16:25 Colombo) | Flyvetid: 55 min</p>
                 </div>
-              </details>
-            </div>
-            
-            <div class="tracks">
-              <div class="track-selector">
-                <button class="track-btn active" data-dest="chennai" data-track="1">Spor 1</button>
-                <button class="track-btn" data-dest="chennai" data-track="2">Spor 2</button>
-              </div>
-              
-              <div class="track-content active" id="chennai-track-1">
-                <h4>Klassisk Arv & Håndværk</h4>
-                <ul>
-                  <li><strong>Formiddag:</strong> Mylapore-vandring til Parthasarathy-templet og Mylapore Tank. Filterkaffe på Mylai Karpagambal Mess. Besøg Kalakshetra Foundations væveværksted (silkesaris).</li>
-                  <li><strong>Eftermiddag:</strong> Georgetown Heritage Walk (historiske handelsruter og Georgetowns koloniarkitektur).</li>
-                </ul>
-              </div>
-              
-              <div class="track-content" id="chennai-track-2">
-                <h4>Gadeliv & Kunstnerkolonier</h4>
-                <ul>
-                  <li><strong>Formiddag:</strong> Morgenmad på Rayar's Mess (traditionelle sydindiske idlis), derefter Cholamandal Artists' Village (kunstnerkoloni).</li>
-                  <li><strong>Eftermiddag:</strong> Marina Beach og Vivekananda House. Taktisk nedkøling med sukkerrørsjuice/rosenmælk eller et stop på café Amethyst inden madlavningskurset.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="destination-media">
-              <img src="/Silk_weaving_at_Kalakshetra_Foun…_202607160810.jpeg" alt="Chennai Silk Weaving">
-            </div>
-          </div>
- 
-          <div class="transport-info">🚗 Uber / Chauffør: Ca. 1,5 - 2 timer (55 km) langs East Coast Road</div>
-          <!-- MAHABALIPURAM -->
-          <div class="destination-block">
-            <div class="destination-header">
-              <div class="dates">23.–24. juli</div>
-              <h3>Mahabalipuram <span class="hotel-tag">Kaldan Samudhra Palace</span></h3>
-              <p class="common-info"><strong>Fælles:</strong> Backup ved monsunbyger: India Seashell Museum. Aften: Privat seafood cooking class på stranden (Kaldan Samudhra).</p>
-              
-              <details class="hotel-details">
-                <summary>🏨 Hotel-info: Kaldan Samudhra Palace (5★ Resort)</summary>
-                <div class="hotel-info-content">
-                  <p><strong>Beliggenhed:</strong> Direkte på stranden ved Den Bengalske Bugt i Mahabalipuram.</p>
-                  <p><strong>Luksus & Atmosfære:</strong> Et paladsagtigt, ultra-luksuriøst resort inspireret af storslået Rajasthani-arkitektur med springvand og store gårdspladser.</p>
-                  <p><strong>Faciliteter:</strong> Huser **Indiens længste swimmingpool** (en spektakulær 175-meter pool), adgang til privat sandstrand, luksuriøs spa og fitness.</p>
-                  <p><strong>Gastronomi:</strong> Fine dining ved stranden med fokus på friske, lokale skaldyr og gourmetretter.</p>
-                  <div class="hotel-media">
-                    <video autoplay loop muted playsinline>
-                      <source src="/Resort_swimming_pool_leading_to_202607160858.mp4" type="video/mp4">
-                    </video>
-                  </div>
+                <!-- Hjemrejse -->
+                <div class="flight-card-admin-item">
+                  <div class="flight-route-admin">Hjemrejse: Colombo (CMB) ➔ Abu Dhabi (AUH) ➔ CPH</div>
+                  <p><strong>Dato:</strong> 1. aug. 2026 | <strong>PNR:</strong> 9PSRAV | <strong>Selskab:</strong> Etihad Airways</p>
+                  <p>EY397 (21:50 CMB ➔ 00:50 AUH +1 dag) | EY177 (02:15 AUH ➔ 07:00 CPH)</p>
                 </div>
-              </details>
-            </div>
-            
-            <div class="tracks">
-              <div class="track-selector">
-                <button class="track-btn active" data-dest="maha" data-track="1">Spor 1</button>
-                <button class="track-btn" data-dest="maha" data-track="2">Spor 2</button>
               </div>
-              
-              <div class="track-content active" id="maha-track-1">
-                <h4>Monumenter & Kystkultur</h4>
-                <ul>
-                  <li><strong>En-route:</strong> DakshinaChitra Heritage Museum (historiske huse, folkedans og levende håndværkstraditioner).</li>
-                  <li><strong>Eftermiddag:</strong> Arjuna's Penance, Five Rathas og Krishna's Butter Ball med autoriseret guide.</li>
-                  <li><strong>Middag:</strong> Moonrakers (lokal steger – hel grillet pomfret eller seer fish med sydindiske krydderier).</li>
-                </ul>
-              </div>
-              
-              <div class="track-content" id="maha-track-2">
-                <h4>Solopgang, Surf & Granit</h4>
-                <ul>
-                  <li><strong>Morgen (06:00):</strong> Det lokale fiskemarked ved havnen og Shore Temple i det tidlige morgenlys.</li>
-                  <li><strong>Formiddag:</strong> Surflektion hos Mumu Surf School på stranden. Besøg hos de lokale stenhuggerværksteder.</li>
-                  <li><strong>Middag:</strong> The Wharf (Radisson) eller uformel mad på Gecko Café.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="destination-media">
-              <img src="/Shore_Temple_Mahabalipuram_morni…_2K_202607160810.jpeg" alt="Mahabalipuram Shore Temple">
-            </div>
-          </div>
- 
-          <div class="transport-info">🚗 Uber / Chauffør: Ca. 2 timer (95 km) langs kysten</div>
-          <!-- PUDUCHERRY -->
-          <div class="destination-block">
-            <div class="destination-header">
-              <div class="dates">24.–26. juli</div>
-              <h3>Puducherry <span class="hotel-tag">Palais De Mahe</span></h3>
-              <p class="common-info"><strong>Fælles:</strong> Backup ved monsunbyger: Sri Aurobindo Papirfabrik eller Arikamedu ruinby. Formiddag: Surdejsbrød og kaffe på Bread & Chocolate.</p>
-              
-              <details class="hotel-details">
-                <summary>🏨 Hotel-info: Palais De Mahe (Boutique Luksus)</summary>
-                <div class="hotel-info-content">
-                  <p><strong>Beliggenhed:</strong> I hjertet af det franske kvarter (White Town), få skridt fra strandpromenaden.</p>
-                  <p><strong>Luksus & Atmosfære:</strong> En fransk-kolonial perle (CGH Earth property) med søjlegange, høje lofter og en uforlignelig boutique-charme, der emmer af ro.</p>
-                  <p><strong>Faciliteter:</strong> En utrolig fredfyldt swimmingpool i den centrale gårdhave omkranset af gule kolonimure, samt massagebehandlinger.</p>
-                  <p><strong>Gastronomi:</strong> Fremragende tagterrasse-restaurant med udsigt over kvarterets tage, der serverer fransk-kreolske retter, samt en hyggelig lounge-bar.</p>
-                  <div class="hotel-media">
-                    <video autoplay loop muted playsinline>
-                      <source src="/Swimming_pool_at_hotel_1080p_202607160905.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                </div>
-              </details>
-            </div>
-            
-            <div class="tracks">
-              <div class="track-selector">
-                <button class="track-btn active" data-dest="pondi" data-track="1">Spor 1</button>
-                <button class="track-btn" data-dest="pondi" data-track="2">Spor 2</button>
-              </div>
-              
-              <div class="track-content active" id="pondi-track-1">
-                <h4>Kreolsk Historie & Silambam Kampsport</h4>
-                <ul>
-                  <li><strong>Formiddag (Dag 1):</strong> Heritage Walk i White Towns sennepsgule gader og det tamilske kvarter.</li>
-                  <li><strong>Mellem (Dag 2):</strong> Jothi Silambam (traditionel kampsport med stave) / Aurobindo Ashrams bibliotek.</li>
-                  <li><strong>Eftermiddag (Dag 2):</strong> Kreolsk cooking class hos Sita Cultural Centre.</li>
-                  <li><strong>Middag:</strong> Maison Perumal (lokal cocktail på tagterrasse) eller traditionel sydindisk mad på Surguru.</li>
-                </ul>
-              </div>
-              
-              <div class="track-content" id="pondi-track-2">
-                <h4>Auroville, Kakao & Fugleliv</h4>
-                <ul>
-                  <li><strong>Formiddag:</strong> Det utopiske Auroville, besøg hos Kallialay Surf School (Serenity Beach), SVARAM (instrumentbyggeri) og Mason & Co (økologisk chokolade).</li>
-                  <li><strong>Frokost:</strong> Aurovilles økologiske caféer.</li>
-                  <li><strong>Eftermiddag:</strong> Bådtur og fugleobservationer ved Osudu Lake med lokal guide.</li>
-                  <li><strong>Middag:</strong> Villa Shanti eller Coromandel Cafe.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="destination-media">
-              <img src="/Yellow_colonial_buildings_Puduch…_2K_202607160810.jpeg" alt="Puducherry White Town">
-            </div>
-          </div>
- 
-          <div class="transport-info">🚗 Uber / Chauffør: Ca. 4,5 - 5 timer (250 km) ind mod Sydindiens hjerte</div>
-          <!-- CHETTINAD -->
-          <div class="destination-block">
-            <div class="destination-header">
-              <div class="dates">26.–27. juli</div>
-              <h3>Chettinad <span class="hotel-tag">Visalam</span></h3>
-              <p class="common-info"><strong>Fælles:</strong> De monumentale palæer bygget af Nattukottai Chettiar-handelsfolket med teaktræ fra Burma og italiensk marmor.</p>
-              
-              <details class="hotel-details">
-                <summary>🏨 Hotel-info: Visalam (Historisk Palæ-hotel)</summary>
-                <div class="hotel-info-content">
-                  <p><strong>Beliggenhed:</strong> Kanadukathan, hjertet af den rige Chettinad-region.</p>
-                  <p><strong>Luksus & Atmosfære:</strong> Et nænsomt restaureret 100 år gammelt Chettiar-familielysthus (CGH Earth). Autentisk palæ-stemning med Burma-teaktræ og store, lyse gårde.</p>
-                  <p><strong>Faciliteter:</strong> Dejlig udendørs swimmingpool gemt væk i en privat gårdhave, poolside-café, og adgang til workshops med lokale håndværkere.</p>
-                  <p><strong>Gastronomi:</strong> Serverer rendyrkede, traditionelle Chettinad-retter tilberedt efter originale familieopskrifter.</p>
-                  <div class="hotel-media">
-                    <video autoplay loop muted playsinline>
-                      <source src="/Swimming_pool_in_Chettiar_mansion_202607160858.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                </div>
-              </details>
-            </div>
-            
-            <div class="tracks">
-              <div class="track-selector">
-                <button class="track-btn active" data-dest="chettinad" data-track="1">Spor 1</button>
-                <button class="track-btn" data-dest="chettinad" data-track="2">Spor 2</button>
-              </div>
-              
-              <div class="track-content active" id="chettinad-track-1">
-                <h4>Marked, Fliser & Bananblade</h4>
-                <ul>
-                  <li><strong>Morgen:</strong> Det rå Karaikudi-marked (krydderier og friske råvarer).</li>
-                  <li><strong>Formiddag:</strong> Athangudi-fliseværksted (se fliserne blive støbt i hånden efter traditionelle mønstre).</li>
-                  <li><strong>Eftermiddag:</strong> Chettinad cooking class på The Bangala eller Visalam.</li>
-                  <li><strong>Middag:</strong> Sri Narayana Coffee House for traditionel middag serveret på bananblade.</li>
-                </ul>
-              </div>
-              
-              <div class="track-content" id="chettinad-track-2">
-                <h4>Palæ-ekspedition & Antikviteter</h4>
-                <ul>
-                  <li><strong>Formiddag:</strong> Kanadukathan (Chettinad Palace) og MSMM House (privat adgang via The Bangalas kontakter).</li>
-                  <li><strong>Eftermiddag:</strong> Walk i Kanadukathans gader, besøg hos Kandangi Saree Weaving Centre.</li>
-                  <li><strong>Middag:</strong> Regionale retter i Visalams spisesal.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="destination-media">
-              <img src="/Athangudi_tiles_in_mansion_2K_202607160810.jpeg" alt="Chettinad Tiles">
-            </div>
-          </div>
- 
-          <div class="transport-info">🚗 Uber / Chauffør: Ca. 2 timer (90 km)</div>
-          <!-- MADURAI -->
-          <div class="destination-block">
-            <div class="destination-header">
-              <div class="dates">27.–28. juli</div>
-              <h3>Madurai <span class="hotel-tag">Grand Madurai</span></h3>
-              <p class="common-info"><strong>Fælles:</strong> Gennemgang af Sydindiens åndelige hjerte. Aften (21:00): Det fascinerende aftenritual (Palliyarai Pooja) i Meenakshi Amman-templet.</p>
-              
-              <details class="hotel-details">
-                <summary>🏨 Hotel-info: Grand Madurai by GRT Hotels (4★)</summary>
-                <div class="hotel-info-content">
-                  <p><strong>Beliggenhed:</strong> Madurai by, med nem adgang til det berømte Meenakshi Amman-tempel.</p>
-                  <p><strong>Luksus & Atmosfære:</strong> Et moderne og stilrent 4-stjernet hotel med komfortable, lydisolerede værelser og fokus på høj service og komfort efter en lang rejsedag.</p>
-                  <p><strong>Faciliteter:</strong> Flot udendørs swimmingpool (med "Swim & Savour" tilbud), wellness-spa og et moderne fitnesscenter.</p>
-                  <p><strong>Gastronomi:</strong> Restauranten <em>Bazaar</em> byder på fremragende buffet og à la carte med både lokale tamilske retter og internationale klassikere.</p>
-                </div>
-              </details>
-            </div>
-            
-            <div class="tracks">
-              <div class="track-selector">
-                <button class="track-btn active" data-dest="madurai" data-track="1">Spor 1</button>
-                <button class="track-btn" data-dest="madurai" data-track="2">Spor 2</button>
-              </div>
-              
-              <div class="track-content active" id="madurai-track-1">
-                <h4>Gademad, Ritualer & Silambam</h4>
-                <ul>
-                  <li><strong>Formiddag:</strong> Træning hos Madurai Silambam Academy eller en Kolam-workshop.</li>
-                  <li><strong>Eftermiddag:</strong> Frokost på Lakshmi Bhavan (Kanchipuram Idli i blade).</li>
-                  <li><strong>Aften/Middag:</strong> Gademads-vandring med fokus på den berømte dessert Jigarthanda og Bun Parotta. Middag på Amma Mess (Kari Dosa).</li>
-                </ul>
-              </div>
-              
-              <div class="track-content" id="madurai-track-2">
-                <h4>Markeder & Historisk Terroir</h4>
-                <ul>
-                  <li><strong>Formiddag:</strong> Blomster- og bananmarkedet, efterfulgt af det nye Keezhadi Museum.</li>
-                  <li><strong>Eftermiddag:</strong> Klippetemplet Thiruparankundram Murugan Temple.</li>
-                  <li><strong>Middag:</strong> Chandran Mess (legendarisk non-veg institution for Mutton Chukka) eller Gowri Krishna (vegetarisk).</li>
-                </ul>
-              </div>
-            </div>
-            <div class="destination-media">
-              <video autoplay loop muted playsinline>
-                <source src="/Street_food_vendor_pouring_coffee_202607160824.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
- 
-          <div class="transport-info">✈️ Regionalt fly fra Madurai til Colombo (Se Flyrejser)</div>
-          <!-- SRI LANKA -->
-          <div class="destination-block">
-            <div class="destination-header">
-              <div class="dates">28. juli – 1. august</div>
-              <h3>Sri Lanka <span class="hotel-tag">Heritance Kandalama</span></h3>
-              <p class="common-info"><strong>Fælles:</strong> Det grønne Sri Lanka. Aften: Traditionel Kandyan-dans i Habarana.</p>
-              
-              <details class="hotel-details">
-                <summary>🏨 Hotel-info: Heritance Kandalama (5★ Eco-Luksus)</summary>
-                <div class="hotel-info-content">
-                  <p><strong>Beliggenhed:</strong> Dambulla, bygget direkte ind i en skovklædt klippeside med udsigt over Kandalama-søen og Sigiriya-klippen.</p>
-                  <p><strong>Luksus & Atmosfære:</strong> Et arkitektonisk mesterværk tegnet af Geoffrey Bawa. Hotellet er dækket af grønne planter og integreret fejlfrit i naturen, hvilket giver en uforlignelig 5-stjernet øko-luksusoplevelse.</p>
-                  <p><strong>Faciliteter:</strong> **3 udendørs swimmingpools** – herunder den berømte <em>Kachchan infinity pool</em>, der visuelt smelter sammen med søen, luksus-spa, observationsdæk med kikkerter til fugle- og dyreliv.</p>
-                  <p><strong>Gastronomi:</strong> Flere fine-dining restauranter og barer med udsigt over søen og klipperne.</p>
-                  <div class="hotel-media">
-                    <video autoplay loop muted playsinline>
-                      <source src="/Hotel_on_forest_cliffside_1080p_202607160900.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                </div>
-              </details>
-            </div>
-            
-            <div class="tracks">
-              <div class="track-selector">
-                <button class="track-btn active" data-dest="lanka" data-track="1">Spor 1</button>
-                <button class="track-btn" data-dest="lanka" data-track="2">Spor 2</button>
-              </div>
-              
-              <div class="track-content active" id="lanka-track-1">
-                <h4>Klippetoppe & Kamatha Dining</h4>
-                <ul>
-                  <li><strong>Morgen (05:00):</strong> Bestig Pidurangala Rock før solopgang. Besøg Popham's Arboretum.</li>
-                  <li><strong>Formiddag:</strong> Rangiri Dambulla Economic Centre (det gigantiske grøntsagsmarked).</li>
-                  <li><strong>Eftermiddag:</strong> Elefantsafari i Kaudulla eller Minneriya nationalparken.</li>
-                  <li><strong>Middag:</strong> Traditionel Kamatha Dining (lergryder over åben ild) med Ranawara-urtete.</li>
-                </ul>
-              </div>
-              
-              <div class="track-content" id="lanka-track-2">
-                <h4>Ruiner, Cykler & Økologisk Havemad</h4>
-                <ul>
-                  <li><strong>Morgen:</strong> Bestig Sigiriya Rock Fortress.</li>
-                  <li><strong>Formiddag:</strong> Cykeltur gennem ruinerne i oldtidsbyen Polonnaruwa.</li>
-                  <li><strong>Middag:</strong> Frokost på Jaga Food (økologisk have-restaurant ved Sigiriya).</li>
-                </ul>
-              </div>
-            </div>
-            <div class="destination-media">
-              <video autoplay loop muted playsinline>
-                <source src="/Elephant_walking_through_jungle_…_202607160825.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
 
+              <h3 style="margin-top: 2rem;">Betalings- & Reservationsstatus</h3>
+              <p><strong>Status for Chennai Cooking Class:</strong> Bekræftet og betalt (Paid and Confirmed).</p>
+              <p><strong>Status for hoteller:</strong> Alle værelser reserveret i Ian, Laura & Williams navne.</p>
+
+            </div>
+          </details>
         </div>
+
       </div>
     </section>
 

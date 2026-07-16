@@ -1,5 +1,6 @@
-// Track Selector Logic
+// Track Selector & Navigation Scroll Spy Logic
 document.addEventListener('DOMContentLoaded', () => {
+  // 1. Track Selector
   const trackButtons = document.querySelectorAll('.track-btn');
   
   trackButtons.forEach(button => {
@@ -27,23 +28,64 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Intersection Observer for scroll animations
-  const observerOptions = {
+  // 2. Intersection Observer for Scroll Animations
+  const animObserverOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
   };
 
-  const observer = new IntersectionObserver((entries) => {
+  const animObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        // observer.unobserve(entry.target); // Optional: if you want it to animate only once
       }
     });
-  }, observerOptions);
+  }, animObserverOptions);
 
   // Observe all destination blocks
   document.querySelectorAll('.destination-block').forEach(block => {
-    observer.observe(block);
+    animObserver.observe(block);
+  });
+
+  // 3. Scroll Spy for Navigation Highlighting
+  const sections = document.querySelectorAll('header[id], section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const bottomNavItems = document.querySelectorAll('.mobile-bottom-nav .nav-item');
+
+  const navObserverOptions = {
+    threshold: 0.25,
+    rootMargin: '-10% 0px -60% 0px'
+  };
+
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        
+        // Highlight Desktop Nav Link
+        navLinks.forEach(link => {
+          if (link.getAttribute('href') === `#${id}`) {
+            link.classList.add('active');
+            link.style.color = 'var(--primary-color)';
+          } else {
+            link.classList.remove('active');
+            link.style.color = '';
+          }
+        });
+
+        // Highlight Mobile Bottom Nav Item
+        bottomNavItems.forEach(item => {
+          if (item.getAttribute('href') === `#${id}`) {
+            item.classList.add('active');
+          } else {
+            item.classList.remove('active');
+          }
+        });
+      }
+    });
+  }, navObserverOptions);
+
+  sections.forEach(section => {
+    navObserver.observe(section);
   });
 });
