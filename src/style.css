@@ -151,42 +151,20 @@ h1, h2, h3, h4 {
   flex: 1;
   position: relative;
 }
-.media-placeholder {
-  background: linear-gradient(135deg, rgba(255,255,255,0.4), rgba(255,255,255,0.1));
-  backdrop-filter: blur(20px);
-  border: 1px solid var(--glass-border);
-  border-radius: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--secondary-color);
-  font-weight: 600;
-  font-family: var(--font-heading);
-  box-shadow: var(--shadow-lg);
-  overflow: hidden;
-  position: relative;
-}
-.media-placeholder::before {
-  content: '';
-  position: absolute;
-  top: 0; left: -100%; width: 50%; height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-  animation: shine 4s infinite;
-}
-@keyframes shine {
-  to { left: 200%; }
-}
-.video-placeholder {
+.hero-video-wrapper {
   width: 100%;
   aspect-ratio: 9/16;
   max-width: 350px;
   margin: 0 auto;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
   border: 4px solid white;
 }
-.media-placeholder.small {
+.hero-video {
   width: 100%;
-  height: 250px;
-  margin-top: 2rem;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Practical Cards */
@@ -207,19 +185,41 @@ h1, h2, h3, h4 {
   padding: 2.5rem 2rem;
   box-shadow: var(--shadow-sm);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
-.glass-card:hover {
-  transform: translateY(-10px);
-  box-shadow: var(--shadow-lg);
+.glass-card.has-bg {
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  color: white;
 }
-.card-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+.glass-card.has-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7));
+}
+.card-content {
+  position: relative;
+  z-index: 2;
+  padding: 2.5rem 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .glass-card h3 {
-  color: var(--secondary-color);
+  color: white;
   margin-bottom: 1rem;
   font-size: 1.5rem;
+}
+.card-custom-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
 }
 
 /* Flights Section */
@@ -452,6 +452,22 @@ h1, h2, h3, h4 {
   font-weight: 500;
 }
 
+/* Destination Media */
+.destination-media {
+  margin-top: 2rem;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  width: 100%;
+  height: 300px;
+}
+.destination-media img,
+.destination-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Tracks */
 .tracks {
   background: var(--surface-color);
@@ -551,7 +567,7 @@ footer {
     text-align: center;
   }
   .hero-content h1 { font-size: 3rem; }
-  .video-placeholder { margin: 0 auto; max-width: 280px; }
+  .hero-video-wrapper { margin: 0 auto; max-width: 280px; }
   .timeline::before { left: 10px; }
   .destination-block { padding-left: 40px; }
   .destination-block::before { left: 1px; }
