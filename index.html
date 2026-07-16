@@ -597,7 +597,7 @@
             <div class="destination-header">
               <div class="destination-top">
                 <div class="dates">22.–23. juli</div>
-                <h2>Chennai</h2>
+                <h2>Chennai <button class="audio-btn" onclick="playAudio('chennai')" title="Hør udtale">🔊</button></h2>
                 <span class="destination-subtitle-mini">Første møde med Tamil Nadu</span>
               </div>
 
@@ -693,7 +693,7 @@
             <div class="destination-header">
               <div class="destination-top">
                 <div class="dates">23.–24. juli</div>
-                <h2>Mahabalipuram</h2>
+                <h2>Mahabalipuram <button class="audio-btn" onclick="playAudio('mahabalipuram')" title="Hør udtale">🔊</button></h2>
                 <span class="destination-subtitle-mini">Monolittempler & kystkultur</span>
               </div>
 
@@ -780,7 +780,7 @@
             <div class="destination-header">
               <div class="destination-top">
                 <div class="dates">24.–26. juli</div>
-                <h2>Puducherry</h2>
+                <h2>Puducherry <button class="audio-btn" onclick="playAudio('puducherry')" title="Hør udtale">🔊</button></h2>
                 <span class="destination-subtitle-mini">Fransk charme og kystliv</span>
               </div>
 
@@ -870,7 +870,7 @@
             <div class="destination-header">
               <div class="destination-top">
                 <div class="dates">26.–27. juli</div>
-                <h2>Chettinad</h2>
+                <h2>Chettinad <button class="audio-btn" onclick="playAudio('chettinad')" title="Hør udtale">🔊</button></h2>
                 <span class="destination-subtitle-mini">Fra kysten til Chettinads palæer</span>
               </div>
 
@@ -992,7 +992,7 @@
             <div class="destination-header">
               <div class="destination-top">
                 <div class="dates">27.–28. juli</div>
-                <h2>Madurai</h2>
+                <h2>Madurai <button class="audio-btn" onclick="playAudio('madurai')" title="Hør udtale">🔊</button></h2>
                 <span class="destination-subtitle-mini">Aften i Madurai</span>
               </div>
 
@@ -1084,7 +1084,7 @@
             <div class="destination-header">
               <div class="destination-top">
                 <div class="dates">28. juli – 1. august</div>
-                <h2>Sri Lanka</h2>
+                <h2>Sri Lanka <button class="audio-btn" onclick="playAudio('sri_lanka')" title="Hør udtale">🔊</button></h2>
                 <span class="destination-subtitle-mini">Klipper, jungle og rolige morgener</span>
               </div>
 
@@ -1214,6 +1214,124 @@
             <h3>Transport & Færdsel</h3>
             <p>Trafikken i Indien og Sri Lanka er hektisk og intens. Når I kører i auto-rickshaw, er det en god idé at aftale prisen på forhånd og holde godt fast under de hurtige sving i de smalle gader.</p>
             <p class="safety-warning">⚠️ <strong>Spisetider:</strong> Kom tidligt til populære frokoststeder (som f.eks. The Bangala i Chettinad) for at sikre jer et bord og undgå den værste myldretid midt på dagen.</p>
+          </div>
+        </div>
+
+        <!-- Audio Guide Widget -->
+        <div class="audio-widget animate-up">
+          <h4>🔊 Sprog & Udtale (Lydguide)</h4>
+          <p style="margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--text-dark);">
+            Her kan I lytte til udtalen af de vigtigste stednavne og lære et par grundlæggende høflighedsfraser på de lokale sprog. Klik på afspil-knapperne for at høre udtalen.
+          </p>
+
+          <div class="audio-lang-group">
+            <h5>Tamil (Tales i Tamil Nadu)</h5>
+            <div class="audio-phrases-grid">
+              
+              <div class="audio-phrase-card">
+                <div class="audio-phrase-info">
+                  <span class="danish-text">Hej / Goddag</span>
+                  <span class="local-text">வணக்கம் (Vanakkam)</span>
+                </div>
+                <button class="audio-phrase-play-btn" onclick="playAudio('ta_hello')" title="Afspil udtale">▶️</button>
+              </div>
+
+              <div class="audio-phrase-card">
+                <div class="audio-phrase-info">
+                  <span class="danish-text">Tak</span>
+                  <span class="local-text">நன்றி (Nandri)</span>
+                </div>
+                <button class="audio-phrase-play-btn" onclick="playAudio('ta_thank_you')" title="Afspil udtale">▶️</button>
+              </div>
+
+              <div class="audio-phrase-card">
+                <div class="audio-phrase-info">
+                  <span class="danish-text">Jeg hedder Ian</span>
+                  <span class="local-text">என் பெயர் இயான் (En peyar Ian)</span>
+                </div>
+                <button class="audio-phrase-play-btn" onclick="playAudio('ta_my_name_is_ian')" title="Afspil udtale">▶️</button>
+              </div>
+
+              <div class="audio-phrase-card">
+                <div class="audio-phrase-info">
+                  <span class="danish-text">Jeg hedder Laura</span>
+                  <span class="local-text">என் பெயர் லாரா (En peyar Laura)</span>
+                </div>
+                <button class="audio-phrase-play-btn" onclick="playAudio('ta_my_name_is_laura')" title="Afspil udtale">▶️</button>
+              </div>
+
+              <div class="audio-phrase-card">
+                <div class="audio-phrase-info">
+                  <span class="danish-text">Jeg hedder William</span>
+                  <span class="local-text">என் பெயர் வில்லியம் (En peyar William)</span>
+                </div>
+                <button class="audio-phrase-play-btn" onclick="playAudio('ta_my_name_is_william')" title="Afspil udtale">▶️</button>
+              </div>
+
+              <div class="audio-phrase-card">
+                <div class="audio-phrase-info">
+                  <span class="danish-text">Hvor meget koster det?</span>
+                  <span class="local-text">இது எவ்வளவு? (Ithu evvalavu?)</span>
+                </div>
+                <button class="audio-phrase-play-btn" onclick="playAudio('ta_how_much_is_it')" title="Afspil udtale">▶️</button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="audio-lang-group">
+            <h5>Sinhala (Tales i Sri Lanka)</h5>
+            <div class="audio-phrases-grid">
+              
+              <div class="audio-phrase-card">
+                <div class="audio-phrase-info">
+                  <span class="danish-text">Hej / Goddag</span>
+                  <span class="local-text">ආයුබෝවන් (Ayubowan)</span>
+                </div>
+                <button class="audio-phrase-play-btn" onclick="playAudio('si_hello')" title="Afspil udtale">▶️</button>
+              </div>
+
+              <div class="audio-phrase-card">
+                <div class="audio-phrase-info">
+                  <span class="danish-text">Tak</span>
+                  <span class="local-text">ස්තුතියි (Stutiyi)</span>
+                </div>
+                <button class="audio-phrase-play-btn" onclick="playAudio('si_thank_you')" title="Afspil udtale">▶️</button>
+              </div>
+
+              <div class="audio-phrase-card">
+                <div class="audio-phrase-info">
+                  <span class="danish-text">Jeg hedder Ian</span>
+                  <span class="local-text">මගේ නම ඉයන් (Mage nama Ian)</span>
+                </div>
+                <button class="audio-phrase-play-btn" onclick="playAudio('si_my_name_is_ian')" title="Afspil udtale">▶️</button>
+              </div>
+
+              <div class="audio-phrase-card">
+                <div class="audio-phrase-info">
+                  <span class="danish-text">Jeg hedder Laura</span>
+                  <span class="local-text">මගේ නම ලෝරා (Mage nama Laura)</span>
+                </div>
+                <button class="audio-phrase-play-btn" onclick="playAudio('si_my_name_is_laura')" title="Afspil udtale">▶️</button>
+              </div>
+
+              <div class="audio-phrase-card">
+                <div class="audio-phrase-info">
+                  <span class="danish-text">Jeg hedder William</span>
+                  <span class="local-text">මගේ නම વિલિયම් (Mage nama William)</span>
+                </div>
+                <button class="audio-phrase-play-btn" onclick="playAudio('si_my_name_is_william')" title="Afspil udtale">▶️</button>
+              </div>
+
+              <div class="audio-phrase-card">
+                <div class="audio-phrase-info">
+                  <span class="danish-text">Hvor meget koster det?</span>
+                  <span class="local-text">મેક કીયદ? (Meka kiyada?)</span>
+                </div>
+                <button class="audio-phrase-play-btn" onclick="playAudio('si_how_much_is_it')" title="Afspil udtale">▶️</button>
+              </div>
+
+            </div>
           </div>
         </div>
 

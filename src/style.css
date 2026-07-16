@@ -1432,3 +1432,124 @@ footer {
     font-size: 2rem;
   }
 }
+
+/* Audio Guide & Pronunciation Styles */
+.audio-btn {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  padding: 0 6px;
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, opacity 0.2s;
+  vertical-align: middle;
+}
+
+.audio-btn:hover {
+  transform: scale(1.2);
+  opacity: 0.85;
+}
+
+.audio-widget {
+  background: var(--surface-color);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--border-radius-lg);
+  padding: 2.5rem 2rem;
+  margin-top: 3rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.audio-widget h4 {
+  font-size: 1.25rem;
+  color: var(--secondary-color);
+  margin-bottom: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.audio-lang-group {
+  margin-bottom: 2.2rem;
+}
+
+.audio-lang-group:last-child {
+  margin-bottom: 0;
+}
+
+.audio-lang-group h5 {
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  border-left: 3px solid var(--primary-color);
+  padding-left: 0.6rem;
+}
+
+.audio-phrases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.2rem;
+}
+
+.audio-phrase-card {
+  background: #fdfcfb;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  border-radius: var(--border-radius-md);
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s, transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.01);
+}
+
+.audio-phrase-card:hover {
+  background: #f7f4ee;
+  transform: translateY(-1px);
+}
+
+.audio-phrase-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.audio-phrase-info .danish-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.audio-phrase-info .local-text {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.audio-phrase-play-btn {
+  background: var(--bg-color);
+  border: 1px solid var(--glass-border);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--primary-color);
+  transition: all 0.2s;
+}
+
+.audio-phrase-card:hover .audio-phrase-play-btn {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  transform: scale(1.05);
+}

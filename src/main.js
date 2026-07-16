@@ -89,3 +89,16 @@ document.addEventListener('DOMContentLoaded', () => {
     navObserver.observe(section);
   });
 });
+
+// Sound Player helper for place names & basic phrases
+let activeAudio = null;
+window.playAudio = function(filename) {
+  if (activeAudio) {
+    activeAudio.pause();
+    activeAudio.currentTime = 0;
+  }
+  activeAudio = new Audio(`/audio/${filename}.mp3`);
+  activeAudio.play().catch(err => {
+    console.warn("Lyd afspilning fejlede:", err);
+  });
+};
